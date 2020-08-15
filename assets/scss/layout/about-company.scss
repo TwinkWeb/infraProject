@@ -1,0 +1,65 @@
+.about-company {
+  grid-column: 4 / full-end;
+  padding: 5rem 4rem;
+  grid-row: 2 /3;
+
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 10rem;
+
+  justify-items: center;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+  &__item::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 1.5rem;
+    background-color: #0462b4;
+    position: relative;
+    top: 2px;
+  }
+
+  &__item {
+    color: #0462b4;
+    padding: 1rem;
+    font-weight: 200;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+
+    span {
+      color: black;
+    }
+  }
+
+  &__advantage {
+    color: #ff9700;
+    font-size: 2rem;
+  }
+
+  &__image {
+    width: 100%;
+    margin-top: 10rem;
+    transform: translateX(-20%) rotate(-8.21deg);
+
+    @media only screen and (max-width: $bp-medium) {
+      transform: translateX(0) rotate(-8.21deg);
+      width: 90%;
+    }
+  }
+
+  &__text {
+    line-height: 1.7;
+    font-weight: 200;
+    margin-top: 1.5rem;
+  }
+}

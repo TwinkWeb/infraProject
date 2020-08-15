@@ -1,0 +1,45 @@
+.activities-company {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+  justify-items: center;
+  margin-top: 10rem;
+}
+
+.activities {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+
+  margin: 10rem 0;
+
+  &__heading {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+
+    line-height: 1.7;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 200;
+  }
+}
+
+.activity {
+  display: grid;
+  justify-items: center;
+  align-items: flex-end;
+  grid-row-gap: 2rem;
+  height: 100%;
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}

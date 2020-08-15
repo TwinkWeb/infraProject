@@ -1,0 +1,105 @@
+.portfolio {
+  grid-column: full-start / full-end;
+  color: white;
+
+  &__logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 35%;
+    height: auto;
+  }
+
+  &__img {
+    &--1 {
+      background-color: yellow;
+      position: relative;
+
+      grid-row: 4 / -1;
+      width: 103%;
+      grid-column: 3 / span 8;
+      background-image: linear-gradient(
+          rgba(226, 226, 226, 0.95) 0%,
+          rgba(236, 236, 236, 0.9013) 19.27%,
+          rgba(238, 227, 212, 0.8506) 30.73%,
+          rgba(255, 151, 0, 0.41) 100%
+        ),
+        url("~assets/images/portfolioImage2.png");
+      background-position: center;
+      background-size: cover;
+      transition: 0.3s;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-2rem);
+        transition: all 0.5s;
+      }
+    }
+
+    &--2 {
+      background-color: red;
+      position: relative;
+
+      grid-row: 4 / -1;
+      width: 103%;
+      grid-column: 12 / span 8;
+      background-image: linear-gradient(
+          rgba(203, 229, 202, 0.8448),
+          rgba(36, 175, 34, 0.4)
+        ),
+        url("~assets/images/portfolioImage1.png");
+      background-position: center;
+      background-size: cover;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-2rem);
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  &__background {
+    background-color: #000428;
+    grid-column: 1 / -1;
+    grid-row: 1 /18;
+  }
+
+  &__pictures {
+    grid-column: 1 / span 6;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    padding: 10vh 0;
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / -1;
+      height: 58.5rem;
+    }
+  }
+
+  &__content {
+    grid-row: 6 / 7;
+    grid-column: 7 / -1;
+    padding: 6rem 8vh;
+    line-height: 1.7;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / -1;
+      grid-row: 7 /8;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+}

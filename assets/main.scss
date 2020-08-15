@@ -1,0 +1,14 @@
+@import "scss/layout/header";
+@import "scss/layout/about-company";
+@import "scss/layout/news";
+@import "scss/layout/brands";
+@import "scss/layout/portfolio";
+@import "scss/layout/services";
+@import "scss/layout/activities-company";
+@import "scss/layout/suggest";
+@import "scss/layout/footer";
+
+$bp-largest: 75em; //1200
+$bp-large: 62em; //1000
+$bp-medium: 50em; //800
+$bp-small: 37.5em;

@@ -1,0 +1,43 @@
+.brands {
+  grid-column: center-start / center-end;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 10rem 0;
+
+  &__names {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+    justify-items: center;
+  }
+  &__icon {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.3s;
+    width: 100%;
+
+    &:hover {
+      filter: none;
+      transition: 0.3s;
+    }
+
+    @media only screen and (max-width: $bp-medium),
+      only screen and (hover: none) {
+      filter: none;
+    }
+  }
+
+  &__text {
+    line-height: 1.7;
+    font-weight: 200;
+  }
+}
