@@ -41,13 +41,13 @@
                 <nuxt-link active-class="active" to="/" class="header__link">О компании</nuxt-link>
               </li>
               <li class="header__item">
-                <nuxt-link active-class="active" to="/" class="header__link">Услуги</nuxt-link>
+                <nuxt-link active-class="active" to="/activity" class="header__link">Услуги</nuxt-link>
               </li>
               <li class="header__item">
-                <nuxt-link active-class="active" to="/" class="header__link">Команда</nuxt-link>
+                <nuxt-link active-class="active" to="/activity" class="header__link">Команда</nuxt-link>
               </li>
               <li class="header__item">
-                <nuxt-link active-class="active" to="/" class="header__link">Контакты</nuxt-link>
+                <nuxt-link active-class="active" to="/activity" class="header__link">Контакты</nuxt-link>
               </li>
             </ul>
           </nav>
@@ -65,13 +65,13 @@
               <nuxt-link active-class="active" to="/" class="header__link">О компании</nuxt-link>
             </li>
             <li class="header__item">
-              <nuxt-link active-class="active" to="/" class="header__link">Услуги</nuxt-link>
+              <nuxt-link active-class="active" to="/activity" class="header__link">Услуги</nuxt-link>
             </li>
             <li class="header__item">
-              <nuxt-link active-class="active" to="/" class="header__link">Команда</nuxt-link>
+              <nuxt-link active-class="active" to="/activity" class="header__link">Команда</nuxt-link>
             </li>
             <li class="header__item">
-              <nuxt-link active-class="active" to="/" class="header__link">Контакты</nuxt-link>
+              <nuxt-link active-class="active" to="/activity" class="header__link">Контакты</nuxt-link>
             </li>
           </ul>
         </nav>
