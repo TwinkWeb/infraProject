@@ -28,6 +28,8 @@ export default {
       }
     ]
   },
+  generate: {},
+
   /*
    ** Global CSS
    */
