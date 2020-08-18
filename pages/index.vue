@@ -146,17 +146,20 @@
           мультимодальной логистики, транспортной инфраструктуры и эффективной
           коммерциализации прилегающих территорий.
         </p>
-        <span data-aos="fade-up">
-          <p class="about-company__advantage mt-md">1000+</p>
-          <p class="about-company__text">Транспортны узлов в нашей аналитической базе</p>
+        <span>
+          <p data-aos="fade-up" class="about-company__advantage mt-md">1000+</p>
+          <p
+            data-aos="fade-up"
+            class="about-company__text"
+          >Транспортны узлов в нашей аналитической базе</p>
         </span>
-        <span data-aos="fade-up">
-          <p class="about-company__advantage mt-md">50 крупных компаний</p>
-          <p class="about-company__text">Доверяют нам свои проекты</p>
+        <span>
+          <p data-aos="fade-up" class="about-company__advantage mt-md">50 крупных компаний</p>
+          <p data-aos="fade-up" class="about-company__text">Доверяют нам свои проекты</p>
         </span>
-        <span data-aos="fade-up">
-          <p class="about-company__advantage mt-md">20 лет</p>
-          <p class="about-company__text">На рынке российской логистики</p>
+        <span>
+          <p data-aos="fade-up" class="about-company__advantage mt-md">20 лет</p>
+          <p data-aos="fade-up" class="about-company__text">На рынке российской логистики</p>
         </span>
       </div>
       <div class="about-company__description">
@@ -223,12 +226,16 @@
     <section class="services">
       <div class="services__expert" data-aos="flip-right" data-aos-duration="2000">
         <h1 class="services__heading">Экспертные услуги</h1>
-        <img class="services__image" src="~assets/images/services/sevicesImage1.png" />
+        <div class="services__wrapper">
+          <img class="services__image" src="~assets/images/services/sevicesImage1.png" />
+        </div>
         <p class="services__text">Технологическая и маркетинговая экспертиза концепции</p>
       </div>
       <div class="services__consulting" data-aos="flip-left" data-aos-duration="2000">
         <h1 class="services__heading">Консалтинг</h1>
-        <img class="services__image" src="~assets/images/services/sevicesImage2.png" />
+        <div class="services__wrapper">
+          <img class="services__image" src="~assets/images/services/sevicesImage2.png" />
+        </div>
         <p class="services__text">Разработка технологической и коммерческой концепции проекта</p>
       </div>
     </section>
@@ -341,14 +348,14 @@
 
         <ul class="nav__contacts">
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="mailto:press@tollway.ru" class="nav__link">
               <svg class="nav__icon">
                 <use xlink:href="~assets/sprite.svg#icon-email" />
               </svg>press@tollway.ru
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="tel:+74952520071" class="nav__link">
               <svg class="nav__icon">
                 <use xlink:href="~assets/sprite.svg#icon-phone" />
               </svg>+7 (495) 252-00-71
@@ -504,7 +511,7 @@ html {
       min-content
     );
   grid-template-columns:
-    [full] minmax(0, 1fr) [full-start] minmax(3rem, 25rem) [center-start] repeat(
+    [full] minmax(0, 1fr) [full-start] 10rem [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
     )
